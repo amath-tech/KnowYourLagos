@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:weightSum="4"
+      android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/textHead1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:fontFamily="cursive"
+          android:layout_weight="3"
+          android:text="Hey, Explorer"
+          android:textColor="@color/black"
+          android:textSize="21sp"
+          android:textStyle="bold" />
+
+      <de.hdodenhof.circleimageview.CircleImageView
+          android:id="@+id/profile_image"
+          android:layout_width="45dp"
+          android:layout_height="30dp"
+          android:src="@drawable/person"
+          android:layout_marginEnd="15dp"
+          android:layout_gravity="end"
+          app:civ_border_width="1dp"
+          app:civ_border_color="#FF000000"/>
+
+   </LinearLayout>
+
+      <TextView
+          android:id="@+id/textHead2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="10dp"
+          android:fontFamily="cursive"
+          android:text="Na we own lasgidi"
+          android:textColor="@color/black"
+          android:textSize="19sp"
+          android:textStyle="bold" />
+
+   <SearchView
+      android:id="@+id/editTextSearch"
+       android:layout_width="match_parent"
+       android:layout_height="43dp"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="5dp"
+      android:textColorHint="#D3D3D3"
+      android:hint="Search for your point of Lagos"
+      android:layout_marginRight="5dp"
+       android:layout_below="@id/textHead2"
+      android:paddingHorizontal="30dp"
+      android:background="@drawable/edit_bg"/>
+
+
+   <androidx.viewpager.widget.ViewPager
+       android:id="@+id/viewPager"
+       android:layout_marginTop="10dp"
+       android:layout_width="match_parent"
+       android:layout_height="269dp" />
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="10dp"
+       android:background="@color/purple_700"
+       android:orientation="vertical">
+
+      <LinearLayout
+          android:id="@+id/lLayoutHorizontal1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="2">
+
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/cardViewFood"
+             android:layout_width="145dp"
+             android:layout_height="160dp"
+             android:layout_marginStart="10dp"
+             android:layout_marginTop="10dp"
+             android:layout_weight="1"
+             app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/food" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:fontFamily="serif-monospace"
+                android:layout_marginBottom="9dp"
+                android:text="Food"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/cardViewDrinks"
+             android:layout_width="145dp"
+             android:layout_height="160dp"
+             android:layout_marginStart="10dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginEnd="10dp"
+             android:layout_weight="1"
+             app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/drinks" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="serif-monospace"
+                android:gravity="center_horizontal"
+                android:text="Recreational center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+         </androidx.cardview.widget.CardView>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/lLayoutHorizontal2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="2">
+
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/cardViewTowns"
+             android:layout_width="145dp"
+             android:layout_height="150dp"
+             android:layout_marginStart="10dp"
+             android:layout_marginTop="10dp"
+             android:layout_weight="1"
+             app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/towns" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+               android:fontFamily="serif-monospace"
+                android:gravity="center_horizontal"
+                android:text="Towns(LGA)"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+         </androidx.cardview.widget.CardView>
+
+         <androidx.cardview.widget.CardView
+             android:id="@+id/cardViewHotels"
+             android:layout_width="145dp"
+             android:layout_height="150dp"
+             android:layout_marginStart="10dp"
+             android:layout_marginTop="10dp"
+             android:layout_marginEnd="10dp"
+             android:layout_weight="1"
+             app:cardCornerRadius="15dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hotels" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:fontFamily="serif-monospace"
+                android:gravity="center_horizontal"
+                android:text="Hotels"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+         </androidx.cardview.widget.CardView>
+
+      </LinearLayout>
+
+   </LinearLayout>
+
+   </LinearLayout>
+
+</ScrollView>

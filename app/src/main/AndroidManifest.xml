@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amath.knowyourlagos">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KnowYourLagos">
+        <activity
+            android:name="com.amath.knowyourlagos.FoodInfo"
+            android:exported="false" />
+        <activity
+            android:name="com.amath.knowyourlagos.HotelsActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.amath.knowyourlagos.DrinksActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.amath.knowyourlagos.FoodActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.amath.knowyourlagos.MainActivity2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.amath.knowyourlagos.AnimalInfo"
+            android:exported="false" />
+        <activity
+            android:name="com.amath.knowyourlagos.MainActivity"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
